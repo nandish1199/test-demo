@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height:800px;
+            background-color: rgb(238, 170, 170);
+            align-self: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>hi</div>
+    <button onclick="fun2()">click</button>
+    <script>
+        console.log("hello");
+        function fun2(){
+            function fun1 (){
+            console.log("loading");
+            setTimeout(()=>{
+                console.log("ran");
+            },5000);
+        }
+        fun1();
+        };
+        
+    </script>
+</body>
+</html>
